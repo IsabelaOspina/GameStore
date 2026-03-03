@@ -23,7 +23,7 @@ public class VideojuegoController {
     }
 
     @GetMapping("/{id}")
-    public Videojuego obtenerPorId(Long id) {
+    public Videojuego obtenerPorId(@PathVariable Long id) {
         return videojuegoService.obtenerPorId(id);
     }
 
